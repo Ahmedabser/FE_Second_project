@@ -5,15 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Page</title>
     <link rel="stylesheet" href="recipe.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <article>
         <main class="container-main">
-            <img src="imges/image-omelette.jpg" alt="omelette" class="container-img" >
-            <button type="button" 
-            onclick="document.getElementById('demo').innerHTML = Date()">Click Me!</button>
 
+            <div id="contener">
+                <header>
+                    <p id="head">Hello Dolly! </p>
+                    <nav>
+                        <ul class="ul1">
+                            <li class="list">Shop</li>
+                            <li class="list">Newstand</li>
+                            <li class="list">Who we are</li>
+                            <li class="list">My profile</li>
+                            <button type="button" class="basket-ptn" onclick="www.figma.com" >Basket(3)</button>
+                        </ul>         
+                    </nav>  
+                </header>
+              </div>
+              
+            <img src="imges/image-omelette.jpg" alt="omelette" class="container-img" >
+
+
+            <div class="div-shop-ptn">
+                <button type="button" class="shop-ptn"
+            onclick="document.getElementById('demo').innerHTML = Date()">Click Me!</button>
+            </div>
             <p id="demo"></p>
+
+           
+
+        <!-- <div class="floating-warning">
+            <p>Warning: Please ensure all ingredients are fresh and properly cooked to avoid any health risks.</p>
+
+
+        </div>
+
+
+
+            <script>
+                window.onload = function() {
+                    var warningMessage = document.createElement('div');
+                    warningMessage.className = 'floating-warning';
+                    warningMessage.innerHTML = '<p>Warning: Please ensure all ingredients are fresh and properly cooked to avoid any health risks.</p>';
+                    document.body.appendChild(warningMessage);
+
+                    setTimeout(function() {
+                        warningMessage.style.display = 'none';
+                    }, 5000); // Hide after 5 seconds
+                };
+            </script>
+
+            <style>
+                .floating-warning {
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background-color: yellow;
+                    padding: 10px;
+                    border: 1px solid black;
+                    z-index: 1000;
+                }
+            </style> -->
+
             <h1>Simple Omelette Recipe</h1>
 
             <p>
